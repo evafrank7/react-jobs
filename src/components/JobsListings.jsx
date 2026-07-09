@@ -10,7 +10,7 @@ const JobsListings = ({ isHome = false }) => {
 
     useEffect(() => {
         const fetchJobs = async () => {
-            const apiUrl = '/api/jobs';
+            const apiUrl = 'https://react-jobs-gt2z.onrender.com/jobs';
             try {
                 const res = await fetch(apiUrl);
                 const data = await res.json();
